@@ -1,7 +1,7 @@
 ﻿$RegPath = "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe"
 if (Test-Path $RegPath) { Remove-Item $RegPath -Recurse }
 
-Uninstall-ChocolateyZipPackage -Packagename $Env:ChocolateyPackageName -ZipFileName "systeminformer-3.2.25066.1218-release-bin.zip"
+Uninstall-ChocolateyZipPackage -Packagename $Env:ChocolateyPackageName -ZipFileName "systeminformer-3.2.25102.2422-release-bin.zip"
 
 $InstallDirectory = "$(if (Get-OSArchitectureWidth 64) { $Env:ProgramW6432 } else { $Env:ProgramFiles })\SystemInformer"
 if (Test-Path $InstallDirectory) { Remove-Item $InstallDirectory -Recurse }
