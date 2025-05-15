@@ -7,16 +7,15 @@ function global:au_SearchReplace {
             "(\t*Checksum\s*=\s*)(`".*`")"         = "`$1`"$($Latest.Checksum32)`""
         }
         'tools\chocolateyuninstall.ps1' = @{
-            "systeminformer-.*?-release-bin\.zip" = "$($Latest.Filename)"
+            "systeminformer-.*?-bin\.zip" = "$($Latest.Filename)"
         }
     }
 }
 
 function global:au_GetLatest {
-    # This repo has releases for the cli tool as well as VS Code vsix
     $releaseInfo = Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/winsiderss/si-builds/releases/latest"
 
-    $asset = $releaseInfo.assets | Where-Object { $_.name -eq "systeminformer-$($releaseInfo.tag_name)-release-bin.zip" }
+    $asset = $releaseInfo.assets | Where-Object { $_.name -eq "systeminformer-$($releaseInfo.tag_name)-bin.zip" }
 
     $Latest = @{
         Filename = $asset.name
