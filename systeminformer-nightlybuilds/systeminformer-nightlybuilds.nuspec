@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>systeminformer-nightlybuilds</id>
-    <version>3.2.25180.1655</version>
-    <title>System Informer - Nightly Builds (Install)</title>
+    <version>3.2.25324.532</version>
+    <title>System Informer - Nightly Builds (Portable)</title>
     <authors>Winsider Seminars and Solutions, Inc.</authors>
     <owners>bibimagic</owners>
     <licenseUrl>https://raw.githubusercontent.com/winsiderss/systeminformer/master/LICENSE.txt</licenseUrl>
