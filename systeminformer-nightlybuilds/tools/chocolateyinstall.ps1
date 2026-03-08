@@ -1,11 +1,11 @@
 ﻿$PackageParams = @{
   PackageName    = "systeminformer-nightlybuilds"
   UnzipLocation  = "$(Split-Path $MyInvocation.MyCommand.Definition)\SystemInformer"
-  Url            = "https://github.com/winsiderss/si-builds/releases/download/3.2.25324.532/systeminformer-build-win32-bin.zip"
-  Url64bit       = "https://github.com/winsiderss/si-builds/releases/download/3.2.25324.532/systeminformer-build-win64-bin.zip"
-  Checksum       = "85209032835ef59c14c1b7ac467242a94ccec953b3ce270a1ecab953eb7cff1d"
+  Url            = "https://github.com/winsiderss/si-builds/releases/download/4.0.26060.1607/systeminformer-build-win32-bin.zip"
+  Url64bit       = "https://github.com/winsiderss/si-builds/releases/download/4.0.26060.1607/systeminformer-build-win64-bin.zip"
+  Checksum       = "61397a26cb64a4f0ed9080ea14b4470df5d2fe6ff0ee3c795908f823d8f4fbef"
   ChecksumType   = "sha256"
-  Checksum64     = "b34582e3c7e227231efc7dfae1ddc8d097493046bb85b6be3735b26e5e809b4e"
+  Checksum64     = "de946fa09d7cfd8954f969cc3b392653471bc2147489e2f2f1c7a39d2ff402c8"
   Checksum64Type = "sha256"
 }
 
